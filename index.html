@@ -1,0 +1,225 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function addStrings(str1,str2){
+                var result =str1+str2;
+                return result;
+            }
+
+        </script>
+        <style>
+            div p{color:red;} /*div를 부모로 가지는 p 전체*/
+            div > p {background:violet;} /*div를 직속 부모로 가지는 p*/
+            div ~ p{font-style: italic;} /*div 밑 p전체*/
+            div + p{font-size: 30px;} /*div와 근접한 하나의 p 만 바꿈*/
+            .k:first-line {color:aqua;} /*첫번째 줄만 바꾸기*/
+            a:link{color:blue;} /*링크 색 바꾸기*/
+            a:visited{color:purple;} /*방문했던 링크 색 바꾸기*/
+            a:hover{color:red;} /*마우스를 위에 올리면 링크 바뀌는 색*/
+        </style>      
+    </head>
+    <body>
+        <a href="https://www.naver.com">Naver</a><br>
+        <div>
+            <p>div안에 있는 p</p>
+            <p>div안에 있는 p2</p>
+            <span>
+                div를 부모로 가지고 span안에 있는 문장
+                <p>div를 조부모, span을 부모로 가지고 있는 p</p>
+            </span>
+        </div>
+        <p>div밑에 있는 p</p>
+        <p class="k">
+            안녕 클레오파트라
+            <br>
+            세상에서 제일 가는 포테이토칩
+        </p> 
+
+        <a href="Javascript:alert('이거는 internal javascript ')">자바스크립트 alert기능!!</a><br>
+        
+        <script>
+            document.write("<br>자바 스크립트로 출력한 문장임<br>");
+            document.write("<h3>참참참</h3>");
+            document.write("<mark>이건 mark,,,</mark>")
+        </script>
+        <br>
+        <script>
+            var name=/*prompt*/("scanf_s 동일 ","뚭니");
+            document.write("입력한 부분을 출력:  "+ name);
+            var ret=/*confirm*/("이거는 취소가 있우"); /*확인 버튼 누르면 true로 입력, 취소로 누르면 false로 입력 받음*/
+            /*alert*/("얜 없우 확인만 누르쇼.") /*단순 메세지 알림창*/
+        </script>
+        <br>
+        <script type="text/javascript">
+            a=5;
+            b=7;
+            c=a+b;
+            console.log(c); /*실행 후 F12누르고 console창 들어가면 결과값 나옴*/
+        </script>
+
+        <script>
+            var x1=34;
+            var x2=34e5;
+            var x3=34e-5;
+            document.write("<p>x1: "+ x1 +"</p>");
+            document.write("<p>x2: "+ x2 +"</p>");
+            document.write("<p>x3: "+ x3 +"</p>");
+            document.write("<p>if? "+ (52>27) +"</p>");
+            document.write("<p>if? "+ (52<27) +"</p>");
+
+            var str1="공산당~공산당~!";
+            document.write(str1+"<br>");  
+        </script>
+        <br>
+        <script>
+            var list = new Array(1, true, "기역니은 댄스를 춰보아요", "ㄱㄴㄱㄴㄱㄴ");
+            document.write(list+"<hr>");
+            var city=new Array();
+            city[0]= "졸리다";
+            city[2]= "배고프다";
+            for(var i=0;i<city.length;i++){
+                document.write("city[" + i + "] = " + city[i]+"<br>");
+                }
+        </script>
+        <br>
+        <script>
+            var score=[90, 70, 60, 50, 40];
+            var sum = 0;
+            for(var i=0;i<score.length;i++){
+                sum += score[i];
+            }
+            document.write("sum = " + sum);
+        </script>
+        <hr>
+        <script>
+            var a=456,b="hi", c = 3>2, d=[32,25], x=null,y;
+            document.write("<br> type of a: " + typeof(a));
+            document.write("<br> type of b: " + typeof(b));
+            document.write("<br> type of c: " + typeof(c));
+            document.write("<br> type of d: " + typeof(d));
+            document.write("<br> type of x: " + typeof(x));
+            document.write("<br> type of y: " + typeof(y)+"<br>");
+            var k=7, m="7";
+            document.write("<br>k= "+ k +" m= "+m);
+            document.write("<br> k==m: "+(k==m));
+            document.write("<br> k===m: "+(k===m));
+        </script>
+        <hr>
+        <script>
+            var age = /*prompt*/('Enter your age');
+            if(age>=18){
+                document.write("You can sign up.");
+            }
+            else{
+                document.write("You must be at least 18 to sign up.");
+            }
+            var result=(age>=18)?"You can sign up.":"You bust be at least 18 to sign up.";
+            document.wrte(result);
+        </script>
+        <br>
+        <script>
+            var city;
+            city =/*prompt*/("Please enter a name of the capital city: ");
+            switch(city){
+                case "seoul":
+                    document.write("Seoul is the capital city of korea.");
+                    break;
+                case "Beijing":
+                    document.write("Beijing is the capital city of China.");
+                    break;
+            }
+        </script>
+        <script>
+            /*exercise 1*/
+            var num = /*prompt*/("Enter the number: ");
+            if(num<0){
+                document.write(num + " is negative.");
+            }
+            else if(num>0){
+                document.write(num+" is positive.");
+            }
+            else{
+                document.write("It's Zero."+"<br>"+"<br>");
+            }
+            /*진짜 집가고 싶다 진짜 집 가고 싶다우루우ㅜㅇ*/
+            var books=["뭐","임","마"];
+            for(var counter in books){
+                document.write(counter + ":"+books[counter]+"<br>");
+            }
+        </script>
+        <script>
+            var counter=100;
+            while(counter>=0){
+                document.write("<br> Number: "+counter);
+                counter-=10;
+            }
+
+            for (var i=0;i<=10;i++){
+                if(i==3){
+                    break;
+                }
+                document.write("<br>" + " The number is "+i+"<br>");
+            }
+        </script>
+        <br>
+        <script>
+            var string1="hello랑";
+            var string2="World랑";
+            var result= addstring(string1,string2);
+            document.write(result);
+        </script>
+        <br>
+        <script>
+            document.write(isNaN("hi")+'<br>');
+            document.write(isNaN(32)+'<br>');
+            document.write(isNaN("32")+'<br>'+"<hr>");
+
+            document.write(parseInt("   2022 이건 출력 안되지롱")+"<br>");
+            document.write(parseInt("0xF")+"<br>");
+            document.write(parseInt(" ")+"<br>");
+            /*여기서 NaN이란 대충 값을 알 수 없다는 너낌~*/
+            document.write(parseFloat("10.33 숫자 제외 출력 안됨")+"<br>");
+            document.write(Number("10.24 오류나지롱"+"<br>"));
+            document.write("<br>"+String(10.33)+"<br>");
+            document.write(String(true)+"<br>"+"<hr>");
+        </script>
+        <script>
+            function star(num){
+                var k=0;
+                if(isNaN(num)||num<0){
+                    document.write("Input Error!. <br>");
+                }
+                for(var stars=0;stars<=num;stars++){
+                    for(var stars=0;stars<k;stars++){
+                    document.write("*");
+                    }
+                    document.write("<br>");
+                    k++;
+                }
+            }
+            var num=prompt("Enter an interger number","5");
+            star(num);
+            document.write("<hr>");
+        </script>
+
+        <script>
+            var str1="Web ";
+            var str2="Programming ";
+            var str3="Rocks";
+            var str=str1.concat(str2,str3);
+            alert(str);
+            var msg="Hello World, Welcome to the universe. ";
+            document.write(msg.indexOf("Welcome")+"<br>");
+            var str_sub=msg.substr(8);  /* "시작 위치","길이" */
+            document.write(str_sub+"<br>");
+            document.write(str_sub.toUpperCase());  /*대문자 변환*/
+            var x=316.99;
+            document.write("<br>"+x.toExponential()+"<br>"); /*숫자 반올림*/
+            document.write(x.toFixed(0)+"<br>"); /*소숫점 자리 몇까지 표시할건지..반올림*/
+            document.write(x.toPrecision(4)+"<br>"); /*총 자릿수...소숫점 앞자리,,,뒷자리,,,다 합쳐서*/
+        </script>
+        window.history.back()
+    </body>
+</html>
