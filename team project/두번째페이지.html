@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <Head>
+    <meta charset="utf-8">
+    <title>자가진단 페이지</title>
+    <style>
+         body{font-family: 'KOTRA_GOTHIC';}
+         @font-face {font-family: 'KOTRA_GOTHIC';
+                     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+                     font-weight: normal;
+                     font-style: normal;}
+
+      #footer{position:fixed;bottom:0;width:100%;
+              background-color:#323232;color:white;text-align:center;
+              font-size:0.85em;padding:5px;}
+
+     .title-word {animation: color-animation 4s linear infinite;}
+     .title-word-1 {--color-1: #DF8453;--color-2: #3D8DAE;--color-3: #E4A9A8;}
+     .title-word-2 {--color-1: #DBAD4A;--color-2: #ACCFCB;--color-3: #17494D;}
+     .title-word-3 {--color-1: #ACCFCB;--color-2: #E4A9A8;--color-3: #ACCFCB;}
+     .title-word-4 {--color-1: #3D8DAE;--color-2: #DF8453;--color-3: #E4A9A8;}
+
+     @keyframes color-animation {
+     0%    {color: var(--color-1)}
+     32%   {color: var(--color-1)}
+     33%   {color: var(--color-2)}
+     65%   {color: var(--color-2)}
+     66%   {color: var(--color-3)}
+     99%   {color: var(--color-3)}
+     100%  {color: var(--color-1)}}
+
+    .container {display: grid; text-align: center;}
+
+       .title {font-size:40px;}
+              
+      .div_wrap{ width:100%;
+                 height:100%;
+                 border:3px solid white; 
+                 margin:0px auto;
+                 padding:0px; 
+                 background-color: white;
+                 text-align: center;}
+
+      .content{border:1px solid white;
+               width:90%; 
+               height:90%;
+               margin:20px auto;
+               padding:0px;
+               overflow:hidden;
+               text-align:center;}
+      
+      .image{float:left;
+             color:black;
+             width:300px; 
+             height:300px;
+             padding: 10px;
+             text-align: center;
+             box-sizing:border-box;}
+
+      .list{float:left;
+            color:black;
+            width:28%; 
+            height:100%;
+            padding: 10px;
+            text-align: center;
+            box-sizing:border-box;
+            background-color:white;    
+            border:3px solid black;
+            border: 7px dotted;
+            border-color: rgb(255, 177, 170);
+            background-color: rgb(255, 231, 230);
+            font-size: 1.3em;}
+
+      .blank{padding: 45px;float:left;}
+
+      .blank2{padding:30px;}
+
+      .slide-in {animation: change 1s ease forwards;}
+
+       @keyframes change {from {transform: translateX(100%);visibility: visible;}
+                           to {transform: translateX(0%);}} 
+    </style>
+  </Head>
+  <body> 
+
+    <div class="div_wrap, slide-in">
+      <div class="blank"> </div>
+      <div class="blank2"> </div>
+            <div class="list">
+              <h1 class="title">
+                <span class="title-word title-word-1">자가</span>
+                <span class="title-word title-word-2">진단을</span>
+                <span class="title-word title-word-3">해</span>
+                <span class="title-word title-word-4">봅시다.</span>
+              </h1>
+                <label><input type="checkbox" name="checklist"value="true"> 하루에 책상 앞에 앉아있는 시간이 3시간 이상이다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 평소에 다리나 몸이 잘 붓는 편이다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 항상 피곤하고 쉽게 지친다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 걸을 때 한 쪽으로 치우친다는 느낌이 든다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 무거운 가방을 한쪽 어깨로만 메고 다닌다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 책상에서 턱을 괴고 앉는다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 장시간 다리를 꼬고 앉는다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 티비를 볼 때 옆으로 누워서 본다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 고개나 등을 굽혀서 책, 스마트폰을 본다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 종종 짝다리를 짚고 서있는다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 눈이 피로하고 건조한 현상이 잦다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 목뒤, 어깨가 자주 뻐근하다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 이유 없이 두통이 자주 발생한다.</label><br><br>
+                <label><input type="checkbox" name="checklist"value="true"> 집중력이 떨어지고 머리가 멍한 느낌이 자주 있다.</label><br><br>
+                <button type="button" onClick="location.href='세번째페이지.html'">제출하기</button>
+            </div>
+            <div class="blank"></div><div class="blank"></div>
+            
+            <div class="image">
+                <img src="안좋은 자세1.jpg"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="안좋은 자세3.jpg"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+           
+            <div class="image">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="안좋은 자세2.jpg">
+            </div>
+
+    </div>
+    
+<div id="footer">웹 프로그래밍 8조 : 안수빈, 김세린, 김경서, 권민준 - Gachon University. </div>
+ 
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <Head>
+     <META http-equiv="refresh" content="2.3; url=두번째페이지.html">
+     <meta charset="utf-8">
+     <title>건강상태 자가진단</title>
+     <style>
+         body {margin: 0;font-family: 'KOTRA_GOTHIC';}
+         @font-face {font-family: 'KOTRA_GOTHIC';
+                     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+                     font-weight: normal;
+                     font-style: normal;}
+         
+         .wrap {background: url('ppp.jpg') no-repeat center fixed;
+               background-size: cover;
+               height: 100vh;}
+         .text{font-size: 1.5em;
+              min-width:11px;
+              white-space: nowrap;
+              margin: 0;
+              position: fixed;
+              color: transparent;
+              top:50%;
+              left:50%;
+              transform: translate(-50%, -50%)}
+         .text::before {
+              content: "건강한 개발자 되는 법";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              color: black;
+              overflow: hidden;
+              border-right: 1px solid black;
+              animation: typing 1.3s steps(31);}
+         @keyframes typing{0% {width: 0%;}
+                          100% {width: 100%;}} 
+         .box {position: absolute;
+              top:50%;
+              left:50%;
+              transition-duration: 2s;
+              transform: translate(600%, 20%);}
+      </style>  
+   </Head>
+  <body>
+    <div class="wrap">
+        <div class="text">건강한 개발자 되는 법</div>
+        <div class="box"><img src="pointer.png"style="width:50px"></div>
+    </div>
+  </body>
+</html>
